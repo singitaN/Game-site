@@ -14,6 +14,7 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+  background-image: url("http://static.hdw.eweb4.com/media/wallpapers_dl/1/106/1054711-background-green.jpg");
 }
 
 a {
@@ -22,11 +23,12 @@ a {
   text-decoration: none;
 }
 .pf-sidebar {
-  background-color: grey;
+  background-color: none;
   padding: 5vw;
 }
 
 .pf-grid-item {
-  background-color: grey;
+  background-color: none;
   padding: 3vw;
 }
+

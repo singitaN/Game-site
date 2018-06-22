@@ -5,53 +5,193 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="pf-base.css">
     <link rel="stylesheet" href="pf-grid.css">
-    <link rel="html" href="bio.html">
-    <link rel="html" href="Tribute-page.html">
-    <link rel="html" href="search.html">
-    <title>Portfolio</title>
+
+<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+
+    <title>TilRock</title>
+    <style type="text/css" rel="stylesheet">
+
+.button {
+    background-color: blue;
+    border: none;
+    color: gold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1000px;
+   transition: all 0.5s;
+   font-family: 'Permanent Marker';
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h2 {
+	color: red !important;
+}
+h1{
+	font-size: 40px;
+	padding:center;
+	background-color: green;
+	font-family: 'Permanent Marker';
+	color: gold;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 16px;
+    font-size: 19px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 1%;
+    padding-bottom: 25%;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+</style>
   </head>
   <body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#Sign-in">Sign In</a></li>
+  <h1>TilRoc'k</h1>
+</ul>
+
     <div class="pf-container">
-
-
-        <div class="pf-sidebar">
-          <h1>Hi there!</h1>
-          <p>My name is Singita and I build web applications.</p>
-          <img src="https://avatars2.githubusercontent.com/u/39482936?s=460&v=4" width="100%">
-        </div>
+       
 
       <div class="pf-content">
-        <p>This is a Small Layout of the Websites I can create and play around with. This Sidebar moves to the the top when You use small device like cell phones. The image on top gets Bigger too. oh! and yes, that's me.</p>
+      	 <div class="pad" style="font-size:170%">
+        <p>Welcome to the TilRock game. This site will provide you with the best addictive game you'll ever play</p>
+    </div>
 
-        <h1>Services</h1>
         <div class="pf-grid">
-          <div class="pf-grid-item">
-            <h2>About Me</h2>
-            <p>so below I have made an external Link showing a snippet of my BIO. this external link will open a new page. </p>
-            <button btn><a href="bio.html" >Learn more</a>
-            </button>
-          </div>
+    <div class="pf-grid-item">
+    	<h3>Objective</h3>
+<p>The goal of SINGo is to score as many points as possible by clearing horizontal lines of Blocks. The player must rotate, move, and drop the falling Tetriminos inside the Matrix (playing field). Lines are cleared when they are filled with Blocks and have no empty spaces.
+
+As lines are cleared, the level increases and Tetriminos fall faster, making the game progressively more challenging. If the Blocks land above the top of the playing field, the game is over.</p>
+    </div>
+<div class="pf-grid-item">
+<h3 style="color:red"> <em>TRY IT NOW</em></h3>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000; padding-bottom: 70%;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+    </div>
+
+</div>
 
           <div class="pf-grid-item">
-             <h2>Portfolio</h2>
-             <p>The link below will take you to one of my first websites. The website was a tribute to larry page</p>
-            <button> <a href="Tribute-page.html" target="_blank">open link</a>
-            </button>
-          </div>
-          <div class="pf-grid-item">
-            <h2>Search Engines</h2>
-            <p>The link below will take you the layout of the dead Search engine I created. (NB. dead just refers to demo)</p>
-            <button><a href="search.html" target="_blank">open link</a>
-            </button>
+            <h2 >DOWNLOAD below</h2>
+            <p>please click on the links below do download our most exciting game to date suited for your device : </p>
+
+            <div class="byt">
+            <a href="#"><button class="button"><span>for Android</span></button></a>
           </div>
 
-          <div class="pf-grid-item">
-            <h2>Consulting</h2>
-            <p>If interested please click below for more information</p>
-            <button btn><a href="#">Learn More</a></button>
+          <div class="byt">
+            <a href="#"><button class="button"><span>for IOS</span></button></a>
+          </div>
+
+          <div class="byt">
+            <a href="#"><button class="button"><span>for Desktop</span></button></a>
+          </div>
+
           </div>
           
-        </div>
 
       </div>
     </div>
